@@ -6,7 +6,6 @@ import { useAuth } from '../../Hooks/useAuth';
 
 
 
-
 const Classes = () => {
     const { user } = useAuth()
     const [currentUser, setCurrentUser] = useState({})
@@ -74,7 +73,6 @@ const Classes = () => {
                 </div>
             </div>
         </>
-
     );
 };
 
