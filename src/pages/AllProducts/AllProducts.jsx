@@ -4,9 +4,7 @@ import { useEffect, useState } from 'react';
 import Swal from 'sweetalert2';
 import { useAuth } from '../../Hooks/useAuth';
 
-
-
-const Classes = () => {
+const AllProducts = () => {
     const { user } = useAuth()
     const [currentUser, setCurrentUser] = useState({})
     const { data: allClasses = [], refetch } = useQuery({
@@ -76,4 +74,5 @@ const Classes = () => {
     );
 };
 
-export default Classes;
+
+export default AllProducts;

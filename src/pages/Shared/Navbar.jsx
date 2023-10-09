@@ -72,7 +72,7 @@ const Navbar = () => {
               <NavLink to="/" className="text-gray-500">
                 Home
               </NavLink>
-              <NavLink to="/classes" className="text-gray-500">
+              <NavLink to="/all-products" className="text-gray-500">
                All Jewelry
               </NavLink>
               {user && <NavLink to="/dashboard/my-enrolled-classes" className="text-gray-500">
@@ -147,7 +147,7 @@ const Navbar = () => {
               Home
             </NavLink>
             <NavLink
-              to="/classes"
+              to="/all-products"
               className="block px-3 py-2 rounded-md text-base font-medium text-black hover:text-white hover:bg-gray-700"
             >
               All Jewelry

@@ -17,8 +17,8 @@ import PaymentHistory from "../pages/Dashboard/PaymentHistory/PaymentHistory";
 import MyEnrolledClasses from "../pages/Dashboard/MyEnrolledClasses/MyEnrolledClasses";
 import MySelectedClasses from "../pages/Dashboard/MySelectedClasses/MySelectedClasses";
 import Blog from "../pages/Blog";
-import Classes from "../pages/Classes/Classes";
 import PrivateRoute from "./PrivateRoute";
+import AllProducts from "../pages/AllProducts/AllProducts";
 
 
 const route = createBrowserRouter([
@@ -35,9 +35,10 @@ const route = createBrowserRouter([
                 path: 'blog',
                 element: <Blog />
             },
+          
             {
-                path: 'classes',
-                element: <Classes />
+                path: 'all-products',
+                element: <AllProducts></AllProducts>
             },
             {
                 path: 'login',
