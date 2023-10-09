@@ -24,7 +24,7 @@ const PopularClasses = () => {
         if (!user) {
             Swal.fire({
                 icon: 'error',
-                text: 'Without login you can not select class',
+                text: 'Without login you can not select Jewelry',
                 footer: '<a href="/login">Please login</a>'
             })
             return;
@@ -32,14 +32,14 @@ const PopularClasses = () => {
         if (currentUser.role === 'admin') {
             Swal.fire({
                 icon: 'error',
-                text: 'As an admin you can not select any class',
+                text: 'As an admin you can not select any Jewelry',
             })
             return;
         }
         if (currentUser.role === 'instructor') {
             Swal.fire({
                 icon: 'error',
-                text: 'As an instructor you can not select any class',
+                text: 'As an Seller you can not select any class',
             })
             return;
         }
@@ -49,14 +49,14 @@ const PopularClasses = () => {
                 if (res.data.acknowledged) {
                     Swal.fire({
                         icon: 'success',
-                        text: 'Class selected successfully',
+                        text: 'Jewelry selected successfully',
                     })
                 }
             })
     }
     return (
         <div className="px-6 md:px-10 mb-10 mx-auto w-11/12">
-        <p className="text-5xl font-extrabold mb-10 text-blue-900 text-center">Popular Classes</p>
+        <p className="text-5xl font-extrabold mb-10 text-blue-900 text-center">Popular Jewelry</p>
         <div className="grid sm:grid-cols-2 md:grid-cols-3 grid-cols-1 gap-5 justify-center">
           {classData.slice(0, 6).map((classes) => (
             <div key={classes._id} className={`card w-full sm:w-80 glass shadow-2xl group ${classes.seats === 0 && 'bg-red-600'}`}>
