@@ -42,7 +42,7 @@ const AddClass = () => {
             <div className='flex justify-between w-full space-x-5'>
                 <div className="form-control w-full">
                     <label htmlFor="" className='font-semibold mb-2'>Product name</label>
-                    <input type="text" name="className" placeholder='Class Name' className='input input-bordered focus:outline-none' />
+                    <input type="text" name="className" placeholder='Product Name' className='input input-bordered focus:outline-none' />
                 </div>
                 <div className="form-control w-full">
                     <label htmlFor="" className='font-semibold mb-2'>Product Image</label>
@@ -61,8 +61,8 @@ const AddClass = () => {
             </div>
             <div className='flex justify-between w-full space-x-5 mt-5'>
                 <div className="form-control w-full">
-                    <label htmlFor="" className='font-semibold mb-2'>Available product Number</label>
-                    <input type="text" name="availableSeats" placeholder='Available Seats' className='input input-bordered focus:outline-none' />
+                    <label htmlFor="" className='font-semibold mb-2'>Available Quantity</label>
+                    <input type="text" name="availableSeats" placeholder='Available Quantity' className='input input-bordered focus:outline-none' />
                 </div>
                 <div className="form-control w-full">
                     <label htmlFor="" className='font-semibold mb-2'>Price</label>
