@@ -55,7 +55,7 @@ const route = createBrowserRouter([
                 children: [
                     {
                         path: 'add-class',
-                        element: <PrivateRoute><InstructorRoute><AddClass /></InstructorRoute></PrivateRoute>
+                        element: <PrivateRoute><StudentRoute><AddClass /></StudentRoute></PrivateRoute>
                     },
                     {
                         path: 'my-classes',

@@ -30,7 +30,7 @@ const AddClass = () => {
                         if (res.data.acknowledged) {
                             Swal.fire({
                                 icon: 'success',
-                                text: 'Class added successfully',
+                                text: 'Product added successfully',
                             })
                         }
                     })
