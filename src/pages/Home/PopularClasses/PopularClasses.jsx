@@ -64,12 +64,10 @@ const PopularClasses = () => {
                 <img className="w-80 h-80 group-hover:scale-110" src={classes.image} alt="car!" />
               </figure>
               <div className="card-body">
-                <p className="font-semibold">Class name: <span className="font-normal">{classes.className}</span></p>
-                <p className="font-semibold">Instructor Name: <span className="font-normal">{classes.instructorName}</span></p>
-                <p className="font-semibold">Available Seats: <span className="font-normal">{classes.seats}</span></p>
-                <p className="font-semibold">Enrolled Students: <span className="font-normal">{classes?.enrolledStudents}</span></p>
+                <p className="font-semibold">Jewelry name: <span className="font-normal">{classes.className}</span></p>
+                <p className="font-semibold">Available Product: <span className="font-normal">{classes.seats}</span></p>
                 <p className="font-semibold">Price: <span className="font-normal">${classes.price}</span></p>
-                <button onClick={() => handleSelect(classes)} className="button mx-auto">Select</button>
+                <button onClick={() => handleSelect(classes)} className="button mx-auto">Add to Cart</button>
               </div>
             </div>
           ))}
