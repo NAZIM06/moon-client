@@ -2,7 +2,6 @@ import axios from 'axios';
 import { useEffect, useState } from 'react';
 import { NavLink, Outlet } from 'react-router-dom';
 import { FaHome, FaUniversity, FaUsers, FaUsersCog, FaWallet, } from 'react-icons/fa';
-import { GiTeacher } from 'react-icons/gi';
 import { IoMdSchool } from 'react-icons/io';
 import { MdAssignmentAdd, MdOutlineClass } from "react-icons/md";
 import { BiSelectMultiple} from "react-icons/bi";
@@ -38,12 +37,11 @@ const Dashboard = () => {
                     currentUser.role === 'instructor' && (
                         <ul id='active-route' className="menu p-4 w-80 h-full bg-blue-500 text-white">
                             {/* Sidebar content here */}
-                            <li><NavLink className="font-bold text-base flex items-center"  to='/dashboard/add-class'><MdAssignmentAdd className='mr-2' />Add Class</NavLink></li>
-                            <li><NavLink className='font-bold text-base flex items-center' to='/dashboard/my-classes'><MdOutlineClass className='w-5 h-5 mr-3' />My Classes</NavLink></li>
+                            <li><NavLink className="font-bold text-base flex items-center"  to='/dashboard/add-class'><MdAssignmentAdd className='mr-2' />Add Product</NavLink></li>
+                            <li><NavLink className='font-bold text-base flex items-center' to='/dashboard/my-classes'><MdOutlineClass className='w-5 h-5 mr-3' />My Product</NavLink></li>
                             <div className='w-full px-3 border my-10'></div>
                             <li><NavLink className='font-bold text-base flex items-center' to='/'><FaHome className='w-5 h-5 mr-3' />Home</NavLink></li>
-                            <li><NavLink className='font-bold text-base flex items-center' to='/instructors'><GiTeacher className='mr-3' />Instructors</NavLink></li>
-                            <li><NavLink className='font-bold text-base flex items-center' to='/classes'><IoMdSchool className='w-5 h-5 mr-2' />Classes</NavLink></li>
+                            <li><NavLink className='font-bold text-base flex items-center' to='/classes'><IoMdSchool className='w-5 h-5 mr-2' />All Jewelry</NavLink></li>
                         </ul>
                     )
                 }
@@ -51,12 +49,11 @@ const Dashboard = () => {
                     currentUser.role === 'admin' && (
                         <ul className="menu p-4 w-80 h-full bg-blue-500 text-white">
                             {/* Sidebar content here */}
-                            <li><NavLink className='font-bold text-base flex items-center' to='/dashboard/manage-classes'><FaUsersCog className='w-5 h-5 mr-3' />Manage Classes</NavLink></li>
+                            <li><NavLink className='font-bold text-base flex items-center' to='/dashboard/manage-classes'><FaUsersCog className='w-5 h-5 mr-3' />Manage Product</NavLink></li>
                             <li><NavLink className='font-bold text-base flex items-center' to='/dashboard/manage-users'><FaUsers className='w-5 h-5 mr-3' /> Manage Users</NavLink></li>
                             <div className='w-full px-3 border my-10'></div>
                             <li><NavLink className='font-bold text-base flex items-center' to='/'><FaHome className='w-5 h-5 mr-3' />Home</NavLink></li>
-                            <li><NavLink className='font-bold text-base flex items-center' to='/instructors'><GiTeacher className='mr-3' />Instructors</NavLink></li>
-                            <li><NavLink className='font-bold text-base flex items-center' to='/classes'><IoMdSchool className='w-5 h-5 mr-2' />Classes</NavLink></li>
+                            <li><NavLink className='font-bold text-base flex items-center' to='/classes'><IoMdSchool className='w-5 h-5 mr-2' />All Jewelry</NavLink></li>
                         </ul>
                     )
                 }
@@ -64,13 +61,12 @@ const Dashboard = () => {
                     currentUser.role === 'student' && (
                         <ul className="menu p-4 w-80 h-full bg-blue-500 text-white">
                             {/* Sidebar content here */}
-                            <li><NavLink className='font-bold text-base flex items-center' to='/dashboard/my-selected-classes'><BiSelectMultiple className='mr-3' />Selected Classes</NavLink></li>
-                            <li><NavLink className='font-bold text-base flex items-center' to='/dashboard/my-enrolled-classes'><FaUniversity className='w-5 h-5 mr-3' />Enrolled Classes</NavLink></li>
+                            <li><NavLink className='font-bold text-base flex items-center' to='/dashboard/my-selected-classes'><BiSelectMultiple className='mr-3' />My Cart</NavLink></li>
+                            <li><NavLink className='font-bold text-base flex items-center' to='/dashboard/my-enrolled-classes'><FaUniversity className='w-5 h-5 mr-3' />My Jewelry</NavLink></li>
                             <li><NavLink className='font-bold text-base flex items-center' to='/dashboard/payment-history'><FaWallet className='w-5 h-5 mr-3' />Payment History</NavLink></li>
                             <div className='w-full px-3 border my-10'></div>
                             <li><NavLink className='font-bold text-base flex items-center' to='/'><FaHome className='w-5 h-5 mr-3' />Home</NavLink></li>
-                            <li><NavLink className='font-bold text-base flex items-center' to='/instructors'><GiTeacher className='mr-3' />Instructors</NavLink></li>
-                            <li><NavLink className='font-bold text-base flex items-center' to='/classes'><IoMdSchool className='w-5 h-5 mr-2' />Classes</NavLink></li>
+                            <li><NavLink className='font-bold text-base flex items-center' to='/classes'><IoMdSchool className='w-5 h-5 mr-2' />All Jewelry</NavLink></li>
                         </ul>
                     )
                 }
