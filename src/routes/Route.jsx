@@ -17,6 +17,7 @@ import Payment from "../pages/Dashboard/Payment/Payment";
 import PaymentHistory from "../pages/Dashboard/PaymentHistory/PaymentHistory";
 import MyEnrolledClasses from "../pages/Dashboard/MyEnrolledClasses/MyEnrolledClasses";
 import MySelectedClasses from "../pages/Dashboard/MySelectedClasses/MySelectedClasses";
+import Blog from "../pages/Blog";
 
 
 const route = createBrowserRouter([
@@ -29,7 +30,10 @@ const route = createBrowserRouter([
                 path: '/',
                 element: <Home />
             },
-
+            {
+                path: 'blog',
+                element: <Blog />
+            },
             {
                 path: 'login',
                 element: <Login />

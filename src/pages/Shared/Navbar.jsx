@@ -81,7 +81,7 @@ const Navbar = () => {
               <NavLink to="/classes" className="text-gray-500">
                Add Jewlery
               </NavLink>
-              <NavLink to="/classes" className="text-gray-500">
+              <NavLink to="/blog" className="text-gray-500">
                Blogs
               </NavLink>
               {user && <NavLink to={'/dashboard'} className="text-gray-500">Dashboard</NavLink>}
@@ -164,7 +164,7 @@ const Navbar = () => {
              Add Jewelry
             </NavLink>
             <NavLink
-              to="/instructors"
+              to="/blog"
               className="block px-3 py-2 rounded-md text-base font-medium text-black hover:text-white hover:bg-gray-700"
             >
              Blogs
