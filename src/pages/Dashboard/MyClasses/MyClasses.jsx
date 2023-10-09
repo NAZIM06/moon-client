@@ -21,7 +21,7 @@ const MyClasses = () => {
                 <title>Camp Knowledge || My Classes</title>
             </Helmet>
         <div className='w-11/12 py-10 px-5 bg-base-300 shadow-2xl my-10'>
-            <p className='text-3xl font-bold my-5 text-center'>My Classes : {allClasses.length}</p>
+            <p className='text-3xl font-bold my-5 text-center'>My Product : {allClasses.length}</p>
             <div className="overflow-x-auto">
                 <table className="table">
                     {/* head */}
@@ -29,10 +29,10 @@ const MyClasses = () => {
                         <tr>
                             <th>#</th>
                             <th>Image</th>
-                            <th>Class Name</th>
+                            <th>Product Name</th>
                             <th>Price</th>
-                            <th>Seats</th>
-                            <th>Total Enrolled Students</th>
+                            <th>Quantity </th>
+                            <th>Total Sold </th>
                             <th>Feedback</th>
                             <th>Status</th>
                             <th>Edit</th>

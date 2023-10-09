@@ -14,9 +14,9 @@ const Payment = () => {
     return (
         <div className='w-3/4 mx-auto mt-10 flex items-center flex-col'>
             <Helmet>
-                <title>MindFulness || Payment</title>
+                <title>Gem Ark || Payment</title>
             </Helmet>
-            <p className='text-4xl font-bold text-center mb-10'>Pay for enrol the class</p>
+            <p className='text-4xl font-bold text-center mb-10'>Pay for selected product</p>
             <Elements stripe={stripePromise}>
                 <CheckoutForm price={price} selectedClass={selectedClass}/>
             </Elements>

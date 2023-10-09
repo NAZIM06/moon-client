@@ -38,7 +38,7 @@ const ManageUsers = () => {
                             <th>#</th>
                             <th>Name</th>
                             <th>Email</th>
-                            <th>Make Instructor</th>
+                            <th>Make Seller</th>
                             <th>Make Admin</th>
                         </tr>
                     </thead>

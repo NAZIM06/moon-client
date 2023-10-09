@@ -58,7 +58,7 @@ const ManageClasses = () => {
                 </dialog>
             }
             <div className='w-11/12 py-10 px-5 bg-base-300 shadow-2xl my-10'>
-                <p className='text-3xl font-bold my-5 text-center'>All Classes: {allClasses.length}</p>
+                <p className='text-3xl font-bold my-5 text-center'>All products: {allClasses.length}</p>
                 <div className="overflow-x-auto">
                     <table className="table">
                         {/* head */}
@@ -66,11 +66,11 @@ const ManageClasses = () => {
                             <tr>
                                 <th>#</th>
                                 <th>Image</th>
-                                <th>Class Name</th>
-                                <th>Instructor Name</th>
-                                <th>Instructor email</th>
+                                <th>Product Name</th>
+                                <th>Seller Name</th>
+                                <th>Seller email</th>
                                 <th>Price</th>
-                                <th>Seats</th>
+                                <th>Quantity</th>
                                 <th>Feedback</th>
                                 <th>Status</th>
                                 <th>Action</th>

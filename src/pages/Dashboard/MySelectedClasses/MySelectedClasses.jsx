@@ -34,7 +34,7 @@ const MySelectedClasses = () => {
     return (
         <>
             <div className='w-11/12 py-10 px-5 bg-base-300 shadow-2xl my-10'>
-                <p className='text-3xl font-bold my-5 text-center'>Selected Classes : {selectedClasses.length}</p>
+                <p className='text-3xl font-bold my-5 text-center'>Selected Products : {selectedClasses.length}</p>
                 <div className="overflow-x-auto">
                     <table className="table">
                         {/* head */}
@@ -43,8 +43,8 @@ const MySelectedClasses = () => {
                                 <th>#</th>
                                 <th>Image</th>
                                 <th>Name</th>
-                                <th>Instructor Name</th>
-                                <th>Available Seats</th>
+                                <th>Seller Name</th>
+                                <th>Available Quantity</th>
                                 <th>Price</th>
                                 <th>Action</th>
                             </tr>
