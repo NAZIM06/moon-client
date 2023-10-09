@@ -38,30 +38,30 @@ const AddClass = () => {
     }
     return (
         <form onSubmit={handleSubmit} className='w-4/6 bg-base-300 shadow-2xl p-10 my-10'>
-            <p className='text-3xl font-bold text-center my-5'>Add Class</p>
+            <p className='text-3xl font-bold text-center my-5'>Add product</p>
             <div className='flex justify-between w-full space-x-5'>
                 <div className="form-control w-full">
-                    <label htmlFor="" className='font-semibold mb-2'>Class name</label>
+                    <label htmlFor="" className='font-semibold mb-2'>Product name</label>
                     <input type="text" name="className" placeholder='Class Name' className='input input-bordered focus:outline-none' />
                 </div>
                 <div className="form-control w-full">
-                    <label htmlFor="" className='font-semibold mb-2'>Class Image</label>
+                    <label htmlFor="" className='font-semibold mb-2'>Product Image</label>
                     <input type="file" name='classImage' className="file-input file-input-bordered w-full" />
                 </div>
             </div>
             <div className='flex justify-between w-full space-x-5 mt-5'>
                 <div className="form-control w-full">
-                    <label htmlFor="" className='font-semibold mb-2'>Instructor name</label>
+                    <label htmlFor="" className='font-semibold mb-2'>seller name</label>
                     <input type="text" name="instructorName" defaultValue={user?.displayName} placeholder='Instructor Name' className='input input-bordered focus:outline-none' />
                 </div>
                 <div className="form-control w-full">
-                    <label htmlFor="" className='font-semibold mb-2'>Instructor Email</label>
+                    <label htmlFor="" className='font-semibold mb-2'>seller Email</label>
                     <input type="text" name="instructorEmail" defaultValue={user?.email} placeholder='Instructor email' className='input input-bordered focus:outline-none' />
                 </div>
             </div>
             <div className='flex justify-between w-full space-x-5 mt-5'>
                 <div className="form-control w-full">
-                    <label htmlFor="" className='font-semibold mb-2'>Available Seats</label>
+                    <label htmlFor="" className='font-semibold mb-2'>Available product Number</label>
                     <input type="text" name="availableSeats" placeholder='Available Seats' className='input input-bordered focus:outline-none' />
                 </div>
                 <div className="form-control w-full">
@@ -69,7 +69,7 @@ const AddClass = () => {
                     <input type="text" name="price" placeholder='price' className='input input-bordered focus:outline-none' />
                 </div>
             </div>
-            <button type='submit' className='button mx-auto flex justify-center w-full'>Add Class</button>
+            <button type='submit' className='button mx-auto flex justify-center w-full'>Add Product</button>
         </form>
     );
 };
