@@ -68,7 +68,7 @@ const Navbar = () => {
           </div>
 
           <div className="hidden md:block">
-            <div className="ml-10 flex font-bold items-baseline space-x-4 text-lg">
+            <div className="ml-10 flex font-normal items-baseline space-x-4 text-lg">
               <NavLink to="/" className="text-gray-500">
                 Home
               </NavLink>

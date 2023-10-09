@@ -4,19 +4,19 @@ import { Link } from 'react-router-dom';
 
 const Footer = () => {
     return (
-        <footer className="footer p-3 bg-blue-900 text-white  flex flex-col  md:flex-row items-center justify-around">
+        <footer className="footer p-3 bg-blue-200 text-blue-900  flex flex-col  md:flex-row items-center justify-around">
         <div className="flex items-center">
-          <img src="https://i.ibb.co/1Jj7wZY/png-transparent-act-sat-reading-computer-icons-reading-child-text-reading-removebg-preview.png" alt="Logo" className="w-18 h-12" />
-          <Link to="/" className="text-white text-4xl font-bold">
-            CampKnowledge
+          <img src="https://i.ibb.co/VWkHMYM/logo-jewellery.png" alt="Logo" className="w-18 h-12" />
+          <Link to="/" className="text-blue-900 text-5xl ml-2 font-thin">
+            Gem Ark
           </Link>
         </div>
         <div className="">
           <p>Address: 49/2 CK Street,Dhaka City</p>
           <p>
             Important Links:{" "}
-            <Link to="/instructors">Instractors</Link> |{" "}
-            <Link to="/classes">Classes</Link> |{" "}
+            <Link to="/instructors">Blogs</Link> |{" "}
+            <Link to="/classes">All Jewelry</Link> |{" "}
           </p>
         </div>
         <div>
@@ -40,7 +40,7 @@ const Footer = () => {
           </div>
         </div>
         <div>
-          <p>&copy; 2023 - All rights reserved by Campknowledge</p>
+          <p>&copy; 2023 - All rights reserved by Gem Ark</p>
         </div>
       </footer>
       
