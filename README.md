@@ -1,9 +1,10 @@
-# React + Vite
+# Gem Ark
+# Live Link: https://project-alpha-c5335.web.app/
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Key Features:
+* every new user will be a Seller by default.
+* Admin and Customer can add classes from his/her Dashboard. 
+* Only admin can see the all users and can change the user role Customer to Seller or admin. Only he can approve or denies the Products which was added. 
+* A Customer can add product to his/her cart and see all products that he/she purchased.
+* Admin and Seller Dashboard are protected by private route.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-# moon-client
